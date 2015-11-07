@@ -1,0 +1,28 @@
+{
+  "name": "fzf",
+  "desc": "Fuzzy finder for your shell.",
+  "deps": {
+    "apt-get": [
+      "ruby"
+    ],
+    "brew": [],
+    "pacman": [
+      "ruby"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/junegunn/fzf.git",
+  "compile": [],
+  "install": [
+    "[ -e .fzf ] || ln -sf ~/.mspac/installed/fzf ~/.fzf",
+    "echo \"yy\" | ./install"
+  ],
+  "remove": [
+    "./uninstall"
+  ]
+}

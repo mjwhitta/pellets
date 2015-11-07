@@ -1,0 +1,34 @@
+{
+  "name": "sqlmap",
+  "desc": "An open source SQLi attack toolkit.",
+  "deps": {
+    "apt-get": [
+      "python2.7"
+    ],
+    "brew": [],
+    "pacman": [
+      "python2"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/sqlmapproject/sqlmap.git",
+  "compile": [],
+  "install": [
+    "mkdir -p ~/bin",
+    "cd ~/bin",
+    "echo \"#!/usr/bin/env bash\" > sqlmap",
+    "echo >> sqlmap",
+    "echo \"cd ~/.mspac/installed/sqlmap\" >> sqlmap",
+    "echo \"python2 ./sqlmap.py \\\$@\" >> sqlmap",
+    "chmod 700 sqlmap"
+  ],
+  "remove": [
+    "cd ~/bin",
+    "rm -f sqlmap"
+  ]
+}

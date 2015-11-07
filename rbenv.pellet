@@ -1,0 +1,28 @@
+{
+  "name": "rbenv",
+  "desc": "Groom your app's Ruby environment with rbenv.",
+  "deps": {
+    "apt-get": [
+      "ruby",
+      "ruby-build"
+    ],
+    "brew": [],
+    "pacman": [
+      "ruby"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/sstephenson/rbenv.git",
+  "compile": [],
+  "install": [
+    "[ -e .rbenv ] || ln -sf ~/.mspac/installed/rbenv ~/.rbenv"
+  ],
+  "remove": [
+    "rm -f ~/.rbenv"
+  ]
+}

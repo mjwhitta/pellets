@@ -1,0 +1,36 @@
+{
+  "name": "clusterd",
+  "desc": "An open source application server attack toolkit.",
+  "deps": {
+    "apt-get": [
+      "python2.7"
+    ],
+    "brew": [],
+    "pacman": [
+      "python2"
+    ],
+    "perl": [],
+    "python2": [
+        "requests"
+    ],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/hatRiot/clusterd.git",
+  "compile": [],
+  "install": [
+    "mkdir -p ~/bin",
+    "cd ~/bin",
+    "echo \"#!/usr/bin/env bash\" > clusterd",
+    "echo >> clusterd",
+    "echo \"cd ~/.mspac/installed/clusterd\" >> clusterd",
+    "echo \"python2 ./clusterd.py \\\$@\" >> clusterd",
+    "chmod 700 clusterd"
+  ],
+  "remove": [
+    "cd ~/bin",
+    "rm -f clusterd"
+  ]
+}

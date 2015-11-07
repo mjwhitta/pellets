@@ -1,0 +1,37 @@
+{
+  "name": "the_silver_searcher",
+  "desc": "A code searching tool (ag) similar to ack, with a focus on speed.",
+  "deps": {
+    "apt-get": [
+      "automake",
+      "liblzma-dev",
+      "libpcre3-dev",
+      "pkg-config",
+      "zlib1g-dev"
+    ],
+    "brew": [],
+    "pacman": [
+      "automake",
+      "pcre",
+      "pkg-config",
+      "xz",
+      "zlib"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/ggreer/the_silver_searcher.git",
+  "compile": [
+    "./build.sh"
+  ],
+  "install": [
+    "sudo make install"
+  ],
+  "remove": [
+    "sudo make uninstall"
+  ]
+}

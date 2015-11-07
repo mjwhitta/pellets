@@ -1,0 +1,29 @@
+{
+  "name": "rvm",
+  "desc": "Ruby enVironment (Version) Manager (rvm).",
+  "deps": {
+    "apt-get": [
+      "ruby",
+      "ruby-build"
+    ],
+    "brew": [],
+    "pacman": [
+      "ruby"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/wayneeseguin/rvm.git",
+  "compile": [],
+  "install": [
+    "[ -e .rvm ] && rvm get head",
+    "[ -e .rvm ] || curl -sSL https://get.rvm.io | bash -s head --autolibs=enabled --ruby"
+  ],
+  "remove": [
+    "rm -rf ~/.rvm"
+  ]
+}

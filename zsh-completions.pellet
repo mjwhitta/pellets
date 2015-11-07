@@ -1,0 +1,25 @@
+{
+  "name": "zsh-completions",
+  "desc": "Additional completion definitions for Zsh.",
+  "deps": {
+    "apt-get": [],
+    "brew": [],
+    "pacman": [],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/zsh-users/zsh-completions.git",
+  "compile": [],
+  "install": [
+    "sudo rm -rf /usr/share/zsh/plugins/zsh-completions",
+    "sudo cp -r ../zsh-completions /usr/share/zsh/plugins/",
+    "sudo chmod -R go+rX /usr/share/zsh/plugins/zsh-completions"
+  ],
+  "remove": [
+    "sudo rm -rf /usr/share/zsh/plugins/zsh-completions"
+  ]
+}

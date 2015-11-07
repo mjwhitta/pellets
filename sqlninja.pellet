@@ -1,0 +1,40 @@
+{
+  "name": "sqlninja",
+  "desc": "An open source SQLi attack toolkit.",
+  "deps": {
+    "apt-get": [
+      "perl"
+    ],
+    "brew": [],
+    "pacman": [
+      "perl"
+    ],
+    "perl": [
+        "DBI",
+        "Net::DNS",
+        "Net::Pcap",
+        "Net::RawIP",
+        "NetPacket"
+    ],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/xxgrunge/sqlninja.git",
+  "compile": [],
+  "install": [
+    "mkdir -p ~/bin",
+    "cd ~/bin",
+    "echo \"#!/usr/bin/env bash\" > sqlninja",
+    "echo >> sqlninja",
+    "echo \"cd ~/.mspac/installed/sqlninja\" >> sqlninja",
+    "echo \"./sqlninja \\\$@\" >> sqlninja",
+    "chmod 700 sqlninja"
+  ],
+  "remove": [
+    "cd ~/bin",
+    "rm -f sqlninja"
+  ]
+}

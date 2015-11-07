@@ -1,0 +1,25 @@
+{
+  "name": "zsh-history-substring-search",
+  "desc": "Clone of Fish shell's history search feature.",
+  "deps": {
+    "apt-get": [],
+    "brew": [],
+    "pacman": [],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/zsh-users/zsh-history-substring-search.git",
+  "compile": [],
+  "install": [
+    "sudo rm -rf /usr/share/zsh/plugins/zsh-history-substring-search",
+    "sudo cp -r ../zsh-history-substring-search /usr/share/zsh/plugins/zsh-history-substring-search/",
+    "sudo chmod -R go+rX /usr/share/zsh/plugins/zsh-history-substring-search"
+  ],
+  "remove": [
+    "sudo rm -rf /usr/share/zsh/plugins/zsh-history-substring-search"
+  ]
+}

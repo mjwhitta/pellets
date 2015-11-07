@@ -1,0 +1,50 @@
+{
+  "name": "vim",
+  "desc": "The best text editor!",
+  "deps": {
+    "apt-get": [
+      "gcc",
+      "liblua5.2-dev",
+      "libperl-dev",
+      "libpython2.7-dev",
+      "lua5.2",
+      "make",
+      "mercurial",
+      "perl",
+      "python2.7",
+      "ruby",
+      "ruby-dev"
+    ],
+    "brew": [],
+    "pacman": [
+      "gcc",
+      "lua",
+      "make",
+      "mercurial",
+      "perl",
+      "python2",
+      "ruby"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/vim/vim.git",
+  "compile": [
+    "make clean",
+    "make distclean",
+    "./configure --with-features=huge --enable-multibyte --enable-rubyinterp --enable-perlinterp --enable-luainterp --enable-pythoninterp --enable-python3interp --enable-gui=gtk2 --enable-cscope --prefix=/usr/local",
+    "make VIMRUNTIMEDIR=/usr/local/share/vim/vim74"
+  ],
+  "install": [
+    "sudo make install"
+  ],
+  "remove": [
+    "sudo make uninstall",
+    "cd /usr/local/bin",
+    "sudo rm -f rvim vim vimdiff vimtutor"
+  ]
+}

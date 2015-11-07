@@ -1,0 +1,34 @@
+{
+  "name": "tmux",
+  "desc": "A terminal multiplexer.",
+  "deps": {
+    "apt-get": [
+      "automake",
+      "libevent-dev",
+      "libncurses-dev"
+    ],
+    "brew": [],
+    "pacman": [
+      "automake",
+      "libevent",
+      "libncurses"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/tmux/tmux.git",
+  "compile": [
+    "sh autogen.sh",
+    "./configure && make"
+  ],
+  "install": [
+    "sudo make install"
+  ],
+  "remove": [
+    "sudo make uninstall"
+  ]
+}

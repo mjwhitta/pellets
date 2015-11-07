@@ -1,0 +1,38 @@
+{
+  "name": "drifter",
+  "desc": "An attempt at a universal Vagrantfile/setup.",
+  "deps": {
+    "apt-get": [
+      "ruby",
+      "vagrant",
+      "virtualbox",
+      "virtualbox-dkms",
+      "virtualbox-guest-additions-iso",
+      "virtualbox-guest-utils"
+    ],
+    "brew": [],
+    "pacman": [
+      "ruby",
+      "vagrant",
+      "virtualbox",
+      "virtualbox-guest-utils",
+      "virtualbox-guest-iso",
+      "virtualbox-host-dkms"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://gitlab.com/mjwhitta/drifter.git",
+  "compile": [],
+  "install": [
+    "[ -e ~/.drifter ] || ln -sf ~/.mspac/installed/drifter ~/.drifter",
+    "./install.sh"
+  ],
+  "remove": [
+    "rm -f ~/bin/drift ~/.drifter"
+  ]
+}

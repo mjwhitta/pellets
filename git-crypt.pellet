@@ -1,0 +1,31 @@
+{
+  "name": "git-crypt",
+  "desc": "Transparent file encryption in git.",
+  "deps": {
+    "apt-get": [
+      "libssl1.0.0",
+      "openssl"
+    ],
+    "brew": [],
+    "pacman": [
+      "openssl"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/AGWA/git-crypt.git",
+  "compile": [],
+  "install": [
+    "make",
+    "mkdir -p ~/bin",
+    "cp -f git-crypt ~/bin/"
+  ],
+  "remove": [
+    "cd ~/bin",
+    "rm -f git-crypt"
+  ]
+}

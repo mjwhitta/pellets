@@ -1,0 +1,25 @@
+{
+  "name": "fizsh",
+  "desc": "FIZSH is the Friendly Interactive ZShell.",
+  "deps": {
+    "apt-get": [],
+    "brew": [],
+    "pacman": [],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/zsh-users/fizsh.git",
+  "compile": [
+    "./configure && make"
+  ],
+  "install": [
+    "sudo make install"
+  ],
+  "remove": [
+    "sudo make uninstall"
+  ]
+}
