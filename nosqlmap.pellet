@@ -1,0 +1,40 @@
+{
+  "name": "nosqlmap",
+  "desc": "Automated Mongo database and NoSQL web application exploitation tool.",
+  "deps": {
+    "apt-get": [
+      "python2"
+    ],
+    "brew": [],
+    "pacman": [
+      "python2"
+    ],
+    "perl": [],
+    "python2": [
+        "couchdb",
+        "httplib2",
+        "ipcalc",
+        "pbkdf2",
+        "pymongo"
+    ],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/tcstool/NoSQLMap.git nosqlmap",
+  "compile": [],
+  "install": [
+    "mkdir -p ~/bin",
+    "cd ~/bin",
+    "echo \"#!/usr/bin/env bash\" > nosqlmap",
+    "echo >> nosqlmap",
+    "echo \"cd ~/.mspac/installed/nosqlmap\" >> nosqlmap",
+    "echo \"python2 ./nosqlmap.py \\\$@\" >> nosqlmap",
+    "chmod 700 nosqlmap"
+  ],
+  "remove": [
+    "cd ~/bin",
+    "rm -f nosqlmap"
+  ]
+}

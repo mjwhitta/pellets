@@ -1,0 +1,29 @@
+{
+  "name": "TODO",
+  "desc": "TODO",
+  "deps": {
+    "apt-get": [
+        "TODO"
+    ],
+    "brew": [],
+    "pacman": [
+        "TODO"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "TODO",
+  "repo": "TODO",
+  "compile": [
+    "TODO"
+  ],
+  "install": [
+    "TODO"
+  ],
+  "remove": [
+    "TODO"
+  ]
+}
