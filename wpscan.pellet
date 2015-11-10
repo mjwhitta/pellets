@@ -1,0 +1,41 @@
+{
+  "name": "wpscan",
+  "desc": "WPScan is a black box WordPress vulnerability scanner.",
+  "deps": {
+    "apt-get": [
+        "libcurl4-openssl-dev",
+        "make",
+        "ruby",
+        "ruby-dev"
+    ],
+    "brew": [],
+    "pacman": [
+        "libyaml",
+        "ruby"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/wpscanteam/wpscan.git",
+  "compile": [
+    "gem install bundler",
+    "bundle install"
+  ],
+  "install": [
+    "mkdir -p ~/bin",
+    "cd ~/bin",
+    "echo \"#!/usr/bin/env bash\" > wpscan",
+    "echo >> wpscan",
+    "echo \"cd ~/.mspac/installed/wpscan\" >> wpscan",
+    "echo \"./wpscan.rb \\\$@\" >> wpscan",
+    "chmod 700 wpscan"
+  ],
+  "remove": [
+    "cd ~/bin",
+    "rm -f wpscan"
+  ]
+}

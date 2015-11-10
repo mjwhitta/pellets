@@ -1,0 +1,30 @@
+{
+  "name": "cmsmap",
+  "desc": "CMSmap is a python open source CMS scanner that automates the process\n    of detecting security flaws of the most popular CMSs.",
+  "deps": {
+    "apt-get": [],
+    "brew": [],
+    "pacman": [],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/Dionach/CMSmap.git cmsmap",
+  "compile": [],
+  "install": [
+    "mkdir -p ~/bin",
+    "cd ~/bin",
+    "echo \"#!/usr/bin/env bash\" > cmsmap",
+    "echo >> cmsmap",
+    "echo \"cd ~/.mspac/installed/cmsmap\" >> cmsmap",
+    "echo \"python2 ./cmsmap.py \\\$@\" >> cmsmap",
+    "chmod 700 cmsmap"
+  ],
+  "remove": [
+    "cd ~/bin",
+    "rm -f cmsmap"
+  ]
+}
