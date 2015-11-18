@@ -9,6 +9,7 @@
       "libc6",
       "libgc1c2",
       "libgcrypt20",
+      "libgcrypt20-dev",
       "libgmp10",
       "libgnutls-deb0-28",
       "liblua5.1-0",
