@@ -12,6 +12,7 @@
       "libgcrypt20-dev",
       "libgmp10",
       "libgnutls-deb0-28",
+      "libgnutls28-dev",
       "liblua5.1-0",
       "libperl5.20",
       "libpython2.7",
