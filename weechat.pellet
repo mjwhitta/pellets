@@ -48,7 +48,7 @@
   "vcs": "git",
   "repo": "https://github.com/weechat/weechat.git",
   "compile": [
-    "mkdir build",
+    "mkdir -p build",
     "cd build",
     "cmake ..",
     "make"
