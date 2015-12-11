@@ -4,9 +4,13 @@
   "deps": {
     "apt-get": [
       "cmake",
+      "curl",
       "guile-2.0-libs",
       "libaspell15",
       "libc6",
+      "libcurl3",
+      "libcurl3-gnutls",
+      "libcurl4-gnutls-dev",
       "libgc1c2",
       "libgcrypt20",
       "libgcrypt20-dev",
