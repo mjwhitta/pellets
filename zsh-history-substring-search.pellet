@@ -15,6 +15,8 @@
   "repo": "https://github.com/zsh-users/zsh-history-substring-search.git",
   "compile": [],
   "install": [
+    "sudo mkdir -p /usr/share/zsh/plugins",
+    "sudo chmod 755 /usr/share/zsh/plugins",
     "sudo rm -rf /usr/share/zsh/plugins/zsh-history-substring-search",
     "sudo cp -r ../zsh-history-substring-search /usr/share/zsh/plugins/zsh-history-substring-search/",
     "sudo chmod -R go+rX /usr/share/zsh/plugins/zsh-history-substring-search"
