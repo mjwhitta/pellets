@@ -1,0 +1,34 @@
+{
+  "name": "obmenu-generator",
+  "desc": "A fast pipe/static menu generator for the Openbox Window Manager, with support for icons.",
+  "deps": {
+    "apt-get": [
+        "perl"
+    ],
+    "brew": [],
+    "pacman": [
+        "perl"
+    ],
+    "perl": [
+      "Data::Dump",
+      "Linux::DesktopFiles"
+    ],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/trizen/obmenu-generator.git",
+  "compile": [],
+  "install": [
+    "mkdir -p ~/.config/obmenu-generator",
+    "cp -f schema.pl ~/.config/obmenu-generator/",
+    "sudo cp obmenu-generator /usr/local/bin",
+    "sudo chown root:root /usr/local/bin/obmenu-generator",
+    "sudo chmod 755 /usr/local/bin/obmenu-generator"
+  ],
+  "remove": [
+    "sudo rm /usr/local/bin/obmenu-generator"
+  ]
+}
