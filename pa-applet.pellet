@@ -1,0 +1,45 @@
+{
+  "name": "pa-applet",
+  "desc": "A systray-applet that allows you to control some of PulseAudio's features.",
+  "deps": {
+    "apt-get": [
+      "autoconf",
+      "automake",
+      "libglib2.0-dev",
+      "libgtk-3-dev",
+      "libnotify-dev",
+      "libpulse-dev",
+      "libx11-dev",
+      "pkg-config"
+    ],
+    "brew": [],
+    "pacman": [
+      "autoconf",
+      "automake",
+      "glib2",
+      "gtk3",
+      "libnotify",
+      "libpulse",
+      "libx11",
+      "pkg-config"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/fernandotcl/pa-applet.git",
+  "compile": [
+    "./autogen.sh",
+    "./configure",
+    "make"
+  ],
+  "install": [
+    "sudo make install"
+  ],
+  "remove": [
+    "sudo make uninstall"
+  ]
+}

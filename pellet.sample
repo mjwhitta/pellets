@@ -3,11 +3,11 @@
   "desc": "TODO",
   "deps": {
     "apt-get": [
-        "TODO"
+      "TODO"
     ],
     "brew": [],
     "pacman": [
-        "TODO"
+      "TODO"
     ],
     "perl": [],
     "python2": [],
