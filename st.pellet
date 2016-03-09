@@ -1,0 +1,30 @@
+{
+  "name": "st",
+  "desc": "A simple terminal implementation for X.",
+  "deps": {
+    "apt-get": [
+        "libx11-dev",
+        "libxft-dev"
+    ],
+    "brew": [],
+    "pacman": [
+        "libx11"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "http://git.suckless.org/st",
+  "compile": [
+    "make"
+  ],
+  "install": [
+    "sudo make install"
+  ],
+  "remove": [
+    "sudo make uninstall"
+  ]
+}
