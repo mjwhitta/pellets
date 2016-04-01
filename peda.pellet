@@ -1,0 +1,29 @@
+{
+  "name": "peda",
+  "desc": "Python Exploit Development Assistance for GDB",
+  "deps": {
+    "apt-get": [
+      "gdb",
+      "python2.7"
+    ],
+    "brew": [],
+    "pacman": [
+      "gdb",
+      "python2"
+    ],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "git",
+  "repo": "https://github.com/longld/peda.git",
+  "compile": [],
+  "install": [
+    "ln -fs $(pwd) ~/.gdb/"
+  ],
+  "remove": [
+    "rm -f ~/.gdb/peda"
+  ]
+}
