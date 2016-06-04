@@ -4,6 +4,7 @@
   "deps": {
     "apt-get": [],
     "brew": [],
+    "mspac": [],
     "pacman": [],
     "perl": [],
     "python2": [],

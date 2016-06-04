@@ -8,6 +8,7 @@
       "libncurses-dev"
     ],
     "brew": [],
+    "mspac": [],
     "pacman": [
       "automake",
       "libevent",

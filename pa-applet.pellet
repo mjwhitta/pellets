@@ -13,6 +13,7 @@
       "pkg-config"
     ],
     "brew": [],
+    "mspac": [],
     "pacman": [
       "autoconf",
       "automake",

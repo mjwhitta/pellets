@@ -1,0 +1,24 @@
+{
+  "name": "zsh-plugins",
+  "desc": "Installs zsh-completions, zsh-history-substring-search, and zsh-syntax-highlighting.",
+  "deps": {
+    "apt-get": [],
+    "brew": [],
+    "mspac": [
+      "zsh-completions",
+      "zsh-history-substring-search",
+      "zsh-syntax-highlighting"
+    ],
+    "pacman": [],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "powerpellet",
+  "repo": "",
+  "compile": [],
+  "install": [],
+  "remove": []
+}

@@ -16,6 +16,7 @@
       "ruby-dev"
     ],
     "brew": [],
+    "mspac": [],
     "pacman": [
       "gcc",
       "lua",

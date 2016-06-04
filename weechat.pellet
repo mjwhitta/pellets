@@ -28,6 +28,7 @@
       "zlib1g"
     ],
     "brew": [],
+    "mspac": [],
     "pacman": [
       "aspell",
       "cmake",

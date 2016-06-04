@@ -9,6 +9,7 @@
         "ruby-dev"
     ],
     "brew": [],
+    "mspac": [],
     "pacman": [
         "libyaml",
         "ruby"

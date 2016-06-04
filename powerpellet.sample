@@ -1,0 +1,22 @@
+{
+  "name": "TODO",
+  "desc": "TODO",
+  "deps": {
+    "apt-get": [],
+    "brew": [],
+    "mspac": [
+        "TODO"
+    ],
+    "pacman": [],
+    "perl": [],
+    "python2": [],
+    "python3": [],
+    "yum": [],
+    "zipper": []
+  },
+  "vcs": "powerpellet",
+  "repo": "",
+  "compile": [],
+  "install": [],
+  "remove": []
+}

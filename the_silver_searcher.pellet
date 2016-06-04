@@ -10,6 +10,7 @@
       "zlib1g-dev"
     ],
     "brew": [],
+    "mspac": [],
     "pacman": [
       "automake",
       "pcre",

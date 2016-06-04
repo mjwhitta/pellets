@@ -6,6 +6,7 @@
       "python2.7"
     ],
     "brew": [],
+    "mspac": [],
     "pacman": [
       "python2"
     ],
