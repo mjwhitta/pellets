@@ -38,7 +38,7 @@
     "make clean",
     "make distclean",
     "./configure --with-features=huge --enable-multibyte --enable-rubyinterp --enable-perlinterp --enable-luainterp --enable-pythoninterp --enable-python3interp --enable-gui=gtk2 --enable-cscope --prefix=/usr/local",
-    "make VIMRUNTIMEDIR=/usr/local/share/vim/vim74"
+    "make VIMRUNTIMEDIR=/usr/local/share/vim/vim80"
   ],
   "install": [
     "sudo make install"
