@@ -7,5 +7,5 @@ install, and uninstall an opensource tool.
 
 # Creating a new pellet
 
-Copy the `pellet.sample` provided and fill in the `TODO`s with read
+Copy the `pellet.sample` provided and fill in the `TODO`s with real
 data.
