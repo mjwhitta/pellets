@@ -27,7 +27,7 @@
     "zipper": []
   },
   "vcs": "git",
-  "repo": "https://gitlab.com/mjwhitta/drifter.git",
+  "repo": "https://github.com/mjwhitta/drifter.git",
   "compile": [],
   "install": [
     "[ -e ~/.drifter ] || ln -sf ~/.mspac/installed/drifter ~/.drifter",
